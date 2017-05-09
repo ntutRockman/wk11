@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="utf-8">
+    <title>Hello firebase</title>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDD0VhX_zmczpPoqQhrothjKoQQSoxcOc0",
+        authDomain: "ntutwk11-400e8.firebaseapp.com",
+        databaseURL: "https://ntutwk11-400e8.firebaseio.com",
+        projectId: "ntutwk11-400e8",
+        storageBucket: "ntutwk11-400e8.appspot.com",
+        messagingSenderId: "813554848206"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <!-- Material Design Lite -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+
+  </head>
+  <body>
+    <div >
+      <form>
+        <fieldset class="sign_up_in">
+          <legend>  登入 </legend>
+          <p>
+            <label for="email">Email :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <input type="email" name="email" id="email" required>
+          </p>
+          <p>
+            <label for="password">Password :&nbsp&nbsp</label>
+            <input type="password" name="password" id="password" required>
+          </p>
+          <p>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Sign Up</button>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Sign In</button>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Sign Out</button>
+          </p>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
